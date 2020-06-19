@@ -1,5 +1,5 @@
 # Image Stacker
-Image Stacker is a Python script to stack together multiple images on top of each other, similar to Adobe Photoshop's photo stacking feature but much faster.
+Image Stacker is a Python script to stack together multiple images on top of each other to create motion blur and such effects, similar to Adobe Photoshop's photo stacking feature but much faster. [See Sample](https://github.com/eeshaanachar/image-stacker/blob/master/sample.png)
 
 ### Objective(s)
 * Automatically stack together any number of images.
