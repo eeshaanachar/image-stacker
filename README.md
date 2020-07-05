@@ -12,7 +12,7 @@ Image Stacker is a Python script to stack together multiple images on top of eac
 * os
 
 ### Working Principle
-Images are read from a folder called exposures (must be created in the same directory as the script) which contains the images to be stacked. Since reading files is an IO-bound operation, Thread Pool Executor is used to significantly reduce the total time taken for reading. The list of images is then converted into an array after which the mean is found out. This is then converted into an integer using vectorization to speed up the process.
+Images are read from a folder called exposures (must be created in the same directory as the script) which contains the images to be stacked. Since reading files is an IO-bound operation, Thread Pool Executor is used to significantly reduce the total time taken for reading. The list of images is then converted into a numpy array in order to compute the mean, thus merging together the images. The means are then rounded into an integer using vectorization to speed up the process. Finally, the image is saved with the same filename as the first file in the exposures folder.
 
 ### Current Scope
 * Absence of GUI to change the stacking rule (median, maximum, etc.) Instead, the rule must be specified within the script.
